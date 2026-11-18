@@ -1,7 +1,7 @@
 import os
 
 APP_NAME = "AutoClicker Pro"
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 CONFIG_FILE = os.path.join(os.path.expanduser("~"), ".autoclicker_config.json")
 
 DARK = "#0d0d0d"
