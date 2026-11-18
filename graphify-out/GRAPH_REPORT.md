@@ -1,7 +1,7 @@
-# Graph Report - AutoClickerPro  (2026-10-26)
+# Graph Report - Auto-Clicker-Pro  (2026-11-18)
 
 ## Corpus Check
-- 12 files · ~2,924 words
+- 12 files · ~2,926 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 3 file(s) not represented in the graph (top: (none) 3)
 
@@ -11,14 +11,14 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `12ade4c8`
+- Built from commit: `9885f3a1`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - Application Interface
 - Click and Macro Engine
-- Pylint CI Workflow
+- steps
 - Input Engine Tests
 - App Guide and Safety
 - Build Configuration
@@ -31,11 +31,11 @@
 3. `steps` - 5 edges
 4. `click_loop()` - 5 edges
 5. `macro_replay()` - 5 edges
-6. `start_clicking()` - 5 edges
-7. `stop_clicking()` - 5 edges
-8. `_refresh_status()` - 5 edges
-9. `hk_row()` - 5 edges
-10. `click_loop()` - 5 edges
+6. `_refresh_status()` - 5 edges
+7. `start_clicking()` - 5 edges
+8. `stop_clicking()` - 5 edges
+9. `click_loop()` - 5 edges
+10. `main()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `click_loop()` --calls--> `click_loop()`  [EXTRACTED]
@@ -60,9 +60,9 @@ Nodes (16): add_current_pos(), clear_points(), click_loop(), macro_replay(), on_
 Cohesion: 0.17
 Nodes (4): click_loop(), do_click(), macro_replay(), AppState
 
-### Community 2 - "Pylint CI Workflow"
+### Community 2 - "steps"
 Cohesion: 0.13
-Nodes (14): runs-on, steps, strategy, jobs, build, python-version, name, name (+6 more)
+Nodes (14): jobs, test, python-version, name, on, name, run, uses (+6 more)
 
 ### Community 4 - "App Guide and Safety"
 Cohesion: 0.17
@@ -92,5 +92,5 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.025) - this node is a cross-community bridge._
 - **Are the 3 inferred relationships involving `macro_replay()` (e.g. with `_refresh_status()` and `_update_counter()`) actually correct?**
   _`macro_replay()` has 3 INFERRED edges - model-reasoned connections that need verification._
-- **Should `Pylint CI Workflow` be split into smaller, more focused modules?**
+- **Should `steps` be split into smaller, more focused modules?**
   _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._

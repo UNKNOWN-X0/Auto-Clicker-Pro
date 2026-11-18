@@ -1,0 +1,22 @@
+name: Checks
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Unit tests (fake input devices, no display needed)
+        run: python -m unittest discover -s tests
+      - name: Pylint, errors only
+        run: |
+          python -m pip install --upgrade pip pylint
+          pylint --errors-only $(git ls-files '*.py')
