@@ -2,7 +2,7 @@
 
 [![Checks](https://github.com/UNKNOWN-X0/Auto-Clicker-Pro/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/UNKNOWN-X0/Auto-Clicker-Pro/actions/workflows/checks.yml)
 [![Version](https://img.shields.io/github/v/release/UNKNOWN-X0/Auto-Clicker-Pro?label=version)](https://github.com/UNKNOWN-X0/Auto-Clicker-Pro/releases)
-[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 A Python desktop app for automating mouse clicks and recording simple mouse-and-keyboard macros. It uses a dark interface and saves its settings locally.
@@ -21,7 +21,7 @@ A Python desktop app for automating mouse clicks and recording simple mouse-and-
 
 ## Getting started
 
-Requires Python 3.9 or later.
+Requires Python 3.10 or later.
 
 ```sh
 python -m pip install -r requirements.txt
@@ -50,7 +50,7 @@ The app stores settings in `~/.autoclicker_config.json`. The project code does n
 python -m unittest discover -s tests
 ```
 
-The tests use fake input devices and do not move or click the real mouse. `.github/workflows/checks.yml` runs them, plus Pylint in errors-only mode, on Python 3.9 and 3.13 for every push and pull request.
+The tests use fake input devices and do not move or click the real mouse. `.github/workflows/checks.yml` runs them, plus Pylint in errors-only mode, on Python 3.10 and 3.14 for every push and pull request.
 
 ## Project structure
 
