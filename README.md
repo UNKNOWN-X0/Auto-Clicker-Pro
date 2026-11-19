@@ -69,6 +69,12 @@ build.py                     Local executable packaging helper
 tests/test_engine.py         Engine regression tests
 ```
 
+## Project documents
+
+| File | What it covers |
+| --- | --- |
+| [ROADMAP.md](ROADMAP.md) | What is planned next, with an issue per item |
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
