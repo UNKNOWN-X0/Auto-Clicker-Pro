@@ -12,8 +12,6 @@ A small, honest desktop tool for repeated clicks and simple macros: downloadable
 
 ## Next
 
-**Say when macOS permission is missing** (stated 2026-11-19, [#2](https://github.com/UNKNOWN-X0/Auto-Clicker-Pro/issues/2)). Without Accessibility permission, clicks fail silently.
-
 **README screenshot** (stated 2026-11-19, [#3](https://github.com/UNKNOWN-X0/Auto-Clicker-Pro/issues/3)). The only project README without one.
 
 ## Later
