@@ -3,6 +3,7 @@ from .config import (APP_NAME, VERSION, CONFIG_FILE, DARK, PANEL, CARD, BORDER,
                      ACCENT, RED, YELLOW, PURPLE, TEXT, MUTED)
 from .state import state
 from . import engine
+from .permissions import accessibility_trusted, open_accessibility_settings
 import threading
 import time
 import json
@@ -358,6 +359,28 @@ status_label = ctk.CTkLabel(
     sf, text="○  IDLE", font=ctk.CTkFont(size=11), text_color=MUTED
 )
 status_label.pack()
+
+# ── macOS permission banner: without Accessibility, clicks and hotkeys do nothing.
+if not accessibility_trusted():
+    app.geometry("680x812")
+    perm = ctk.CTkFrame(app, fg_color="#3a2f00", corner_radius=0, height=52)
+    perm.pack(fill="x")
+    perm.pack_propagate(False)
+    ctk.CTkLabel(
+        perm,
+        text="Clicks and hotkeys need Accessibility permission for this app.",
+        font=ctk.CTkFont(size=12),
+        text_color=YELLOW,
+    ).pack(side="left", padx=18)
+    ctk.CTkButton(
+        perm,
+        text="Open Settings",
+        width=120,
+        fg_color=YELLOW,
+        text_color=DARK,
+        hover_color="#e6bd00",
+        command=open_accessibility_settings,
+    ).pack(side="right", padx=18)
 
 # ── Counter
 cbar = ctk.CTkFrame(app, fg_color=CARD, corner_radius=0, height=72)

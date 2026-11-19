@@ -30,7 +30,7 @@ python -m pip install -r requirements.txt
 python auto_clicker.py
 ```
 
-On macOS, you may need to grant Accessibility permissions to the terminal or packaged app before it can control the mouse and keyboard. Platform permissions and input-library support can also affect behavior on other systems.
+On macOS, the app needs Accessibility permission before it can control the mouse and keyboard; without it, the window shows a banner with a button that opens the right settings pane. Platform permissions and input-library support can also affect behavior on other systems.
 
 ## Privacy
 
@@ -65,8 +65,10 @@ autoclicker/engine.py        Click and macro playback logic
 autoclicker/config.py        App constants and local settings path
 autoclicker/state.py         Shared runtime state
 autoclicker/dependencies.py  UI and input-library setup
+autoclicker/permissions.py   macOS Accessibility permission check
 build.py                     Local executable packaging helper
 tests/test_engine.py         Engine regression tests
+tests/test_permissions.py    Permission check tests with fake system libraries
 ```
 
 ## Project documents
