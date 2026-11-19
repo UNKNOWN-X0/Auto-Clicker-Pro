@@ -7,19 +7,21 @@
 
 A Python desktop app for automating mouse clicks and recording simple mouse-and-keyboard macros. It uses a dark interface and saves its settings locally.
 
-**[Download a release →](https://github.com/UNKNOWN-X0/Auto-Clicker-Pro/releases)**
+**[Download AutoClicker Pro →](https://github.com/UNKNOWN-X0/Auto-Clicker-Pro/releases)**
 
 ## Features
 
-- Configure click interval down to milliseconds and choose left, right, or middle click, including double-clicks.
-- Repeat clicks indefinitely or set a fixed count.
-- Cycle through multiple screen coordinates, with optional timing and position variation.
-- Assign keyboard shortcuts to start and stop clicking.
-- Record and replay mouse and keyboard input sequences.
-- Save and restore app settings automatically.
-- Move the pointer to the top-left corner to trigger PyAutoGUI's emergency failsafe.
+- **Precise timing:** click intervals down to milliseconds, with left, right, or middle clicks and double-clicks.
+- **Repeat control:** click indefinitely or a fixed number of times.
+- **Multi-point clicking:** cycle through several screen coordinates, with optional timing and position variation.
+- **Hotkeys:** keyboard shortcuts to start and stop clicking.
+- **Macros:** record and replay mouse and keyboard input sequences.
+- **Saved settings:** restored automatically on the next launch.
+- **Failsafe:** move the pointer to the top-left corner to stop PyAutoGUI immediately.
 
 ## Getting started
+
+### Run it yourself
 
 Requires Python 3.10 or later.
 
@@ -30,7 +32,13 @@ python auto_clicker.py
 
 On macOS, you may need to grant Accessibility permissions to the terminal or packaged app before it can control the mouse and keyboard. Platform permissions and input-library support can also affect behavior on other systems.
 
-## Build an executable
+## Privacy
+
+The app stores settings in `~/.autoclicker_config.json`. The project code does not include an analytics or telemetry service. Macro files can contain recorded key presses and screen coordinates, so review them before sharing.
+
+## Development
+
+### Build an executable
 
 Run the build helper on the operating system you want to package for:
 
@@ -39,10 +47,6 @@ python build.py
 ```
 
 The helper installs PyInstaller if needed, then writes the executable to `dist/`. Build artifacts are local; download-ready binaries are available only if published on the [Releases](https://github.com/UNKNOWN-X0/Auto-Clicker-Pro/releases) page.
-
-## Configuration and privacy
-
-The app stores settings in `~/.autoclicker_config.json`. The project code does not include an analytics or telemetry service. Macro files can contain recorded key presses and screen coordinates, so review them before sharing.
 
 ## Tests
 
