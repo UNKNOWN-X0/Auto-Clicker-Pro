@@ -12,16 +12,16 @@
     "semantic_hash": "611e4bca380434b0cb19b3c3411fe84e"
   },
   "autoclicker/app.py": {
-    "mtime": 1792758084.5911474,
-    "seen": 1792798369.355444,
-    "ast_hash": "dc3580104fc1f88a00c5cecba92b1d59",
-    "semantic_hash": "dc3580104fc1f88a00c5cecba92b1d59"
+    "mtime": 1795053350.8985767,
+    "seen": 1795076490.751691,
+    "ast_hash": "8367fd885bf2677513adf135bc85c4a6",
+    "semantic_hash": ""
   },
   "autoclicker/config.py": {
-    "mtime": 1792758084.590862,
-    "seen": 1792798369.355445,
-    "ast_hash": "4f8ae9c9df10cc060550b6dfbfbf6187",
-    "semantic_hash": "4f8ae9c9df10cc060550b6dfbfbf6187"
+    "mtime": 1795041170.906884,
+    "seen": 1795047496.681769,
+    "ast_hash": "a80348be9d57e761b8d7b7ee9fdea871",
+    "semantic_hash": ""
   },
   "autoclicker/dependencies.py": {
     "mtime": 1792758084.5907915,
@@ -48,15 +48,15 @@
     "semantic_hash": "000482c4e7d3da9998711c8aca1d7a1e"
   },
   "tests/test_engine.py": {
-    "mtime": 1792758336.4200544,
-    "seen": 1792798369.3554492,
-    "ast_hash": "702ce4a75fb3e68561f1e87f66abfdca",
-    "semantic_hash": "702ce4a75fb3e68561f1e87f66abfdca"
+    "mtime": 1795041289.918468,
+    "seen": 1795047496.6817741,
+    "ast_hash": "a7df365727bb73a1f6972c11a24b1a4a",
+    "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1795040791.4909146,
-    "seen": 1795040944.88095,
-    "ast_hash": "fe004b4e461cf7a535a10b187c25fbe6",
+    "mtime": 1795076174.2069004,
+    "seen": 1795076490.7517009,
+    "ast_hash": "1760d4b78ac12cf556756ec8e6ddc151",
     "semantic_hash": ""
   },
   "requirements.txt": {
@@ -72,9 +72,33 @@
     "semantic_hash": ""
   },
   ".github/workflows/checks.yml": {
-    "mtime": 1795040780.5558388,
-    "seen": 1795040944.8809202,
-    "ast_hash": "730e2518e0b2c5d92182cdf24a3c9d95",
+    "mtime": 1795041163.0860786,
+    "seen": 1795047496.6817589,
+    "ast_hash": "2251705194cf14354c14e5a8ebeb822b",
+    "semantic_hash": ""
+  },
+  ".impeccable/config.json": {
+    "mtime": 1795041465.585287,
+    "seen": 1795047496.681762,
+    "ast_hash": "03877b28e0c1f9384fbb2bfe17b8462a",
+    "semantic_hash": ""
+  },
+  "autoclicker/permissions.py": {
+    "mtime": 1795053350.839119,
+    "seen": 1795076490.7516959,
+    "ast_hash": "81ca931259bd1738f19382da462ef212",
+    "semantic_hash": ""
+  },
+  "tests/test_permissions.py": {
+    "mtime": 1795076155.4489691,
+    "seen": 1795076490.7517,
+    "ast_hash": "5a6108d6306039d7ddaf294722fdcd44",
+    "semantic_hash": ""
+  },
+  "ROADMAP.md": {
+    "mtime": 1795076410.1061652,
+    "seen": 1795076490.751702,
+    "ast_hash": "d9720a04e4b7769d4871bcf840dca0a8",
     "semantic_hash": ""
   }
 }

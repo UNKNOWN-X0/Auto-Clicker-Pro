@@ -1,0 +1,86 @@
+{
+  "auto_clicker.py": {
+    "mtime": 1792758084.5913067,
+    "seen": 1792798369.3554409,
+    "ast_hash": "1e0bdc162879ef900d5a495bc9e87fd1",
+    "semantic_hash": "1e0bdc162879ef900d5a495bc9e87fd1"
+  },
+  "autoclicker/__init__.py": {
+    "mtime": 1792758084.590718,
+    "seen": 1792798369.355443,
+    "ast_hash": "611e4bca380434b0cb19b3c3411fe84e",
+    "semantic_hash": "611e4bca380434b0cb19b3c3411fe84e"
+  },
+  "autoclicker/app.py": {
+    "mtime": 1792758084.5911474,
+    "seen": 1792798369.355444,
+    "ast_hash": "dc3580104fc1f88a00c5cecba92b1d59",
+    "semantic_hash": "dc3580104fc1f88a00c5cecba92b1d59"
+  },
+  "autoclicker/config.py": {
+    "mtime": 1795041170.906884,
+    "seen": 1795047496.681769,
+    "ast_hash": "a80348be9d57e761b8d7b7ee9fdea871",
+    "semantic_hash": ""
+  },
+  "autoclicker/dependencies.py": {
+    "mtime": 1792758084.5907915,
+    "seen": 1792798369.355446,
+    "ast_hash": "95b5c541ab25bd522ad90910995a7f32",
+    "semantic_hash": "95b5c541ab25bd522ad90910995a7f32"
+  },
+  "autoclicker/engine.py": {
+    "mtime": 1792758084.5910203,
+    "seen": 1792798369.355447,
+    "ast_hash": "2fc4262eed7e2d94224b6f2d802b50d5",
+    "semantic_hash": "2fc4262eed7e2d94224b6f2d802b50d5"
+  },
+  "autoclicker/state.py": {
+    "mtime": 1792758084.5909302,
+    "seen": 1792798369.355447,
+    "ast_hash": "7a649b0bd178179d7ca79f9ec1c7f8dd",
+    "semantic_hash": "7a649b0bd178179d7ca79f9ec1c7f8dd"
+  },
+  "build.py": {
+    "mtime": 1792756191.7438693,
+    "seen": 1792798369.355448,
+    "ast_hash": "000482c4e7d3da9998711c8aca1d7a1e",
+    "semantic_hash": "000482c4e7d3da9998711c8aca1d7a1e"
+  },
+  "tests/test_engine.py": {
+    "mtime": 1795041289.918468,
+    "seen": 1795047496.6817741,
+    "ast_hash": "a7df365727bb73a1f6972c11a24b1a4a",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1795041163.0894024,
+    "seen": 1795047496.681776,
+    "ast_hash": "d5d2e56557e4bb09f720b32f48b3b131",
+    "semantic_hash": ""
+  },
+  "requirements.txt": {
+    "mtime": 1792755729.3572745,
+    "seen": 1792798369.3554509,
+    "ast_hash": "59c8ddf38f620b1067baf32ac93aec39",
+    "semantic_hash": "59c8ddf38f620b1067baf32ac93aec39"
+  },
+  "AGENTS.md": {
+    "mtime": 1793023758.0565052,
+    "seen": 1795040944.880949,
+    "ast_hash": "7af4a07753df0476e10cf438ef59251d",
+    "semantic_hash": ""
+  },
+  ".github/workflows/checks.yml": {
+    "mtime": 1795041163.0860786,
+    "seen": 1795047496.6817589,
+    "ast_hash": "2251705194cf14354c14e5a8ebeb822b",
+    "semantic_hash": ""
+  },
+  ".impeccable/config.json": {
+    "mtime": 1795041465.585287,
+    "seen": 1795047496.681762,
+    "ast_hash": "03877b28e0c1f9384fbb2bfe17b8462a",
+    "semantic_hash": ""
+  }
+}

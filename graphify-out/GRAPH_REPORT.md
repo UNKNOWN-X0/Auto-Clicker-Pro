@@ -1,17 +1,17 @@
-# Graph Report - Auto-Clicker-Pro  (2026-11-18)
+# Graph Report - Auto-Clicker-Pro  (2026-11-19)
 
 ## Corpus Check
-- 12 files · ~2,926 words
+- 16 files · ~3,450 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 3 file(s) not represented in the graph (top: (none) 3)
 
 ## Summary
-- 112 nodes · 164 edges · 9 communities (5 shown, 4 thin omitted)
-- Extraction: 91% EXTRACTED · 9% INFERRED · 0% AMBIGUOUS · INFERRED: 15 edges (avg confidence: 0.85)
+- 139 nodes · 202 edges · 11 communities (7 shown, 4 thin omitted)
+- Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 16 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9885f3a1`
+- Built from commit: `863aeb7f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -24,18 +24,20 @@
 - Build Configuration
 - Input Event Listeners
 - Project instructions
+- permissions.py
+- Roadmap
 
 ## God Nodes (most connected - your core abstractions)
 1. `EngineTests` - 8 edges
-2. `AutoClicker Pro desktop app` - 7 edges
-3. `steps` - 5 edges
-4. `click_loop()` - 5 edges
-5. `macro_replay()` - 5 edges
-6. `_refresh_status()` - 5 edges
+2. `accessibility_trusted()` - 7 edges
+3. `AutoClicker Pro desktop app` - 7 edges
+4. `Roadmap` - 6 edges
+5. `click_loop()` - 5 edges
+6. `macro_replay()` - 5 edges
 7. `start_clicking()` - 5 edges
 8. `stop_clicking()` - 5 edges
-9. `click_loop()` - 5 edges
-10. `main()` - 5 edges
+9. `_refresh_status()` - 5 edges
+10. `hk_row()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `click_loop()` --calls--> `click_loop()`  [EXTRACTED]
@@ -50,7 +52,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (9 total, 4 thin omitted)
+## Communities (11 total, 4 thin omitted)
 
 ### Community 0 - "Application Interface"
 Cohesion: 0.13
@@ -61,8 +63,8 @@ Cohesion: 0.17
 Nodes (4): click_loop(), do_click(), macro_replay(), AppState
 
 ### Community 2 - "steps"
-Cohesion: 0.13
-Nodes (14): jobs, test, python-version, name, on, name, run, uses (+6 more)
+Cohesion: 0.12
+Nodes (15): jobs, test, python-version, name, on, name, run, uses (+7 more)
 
 ### Community 4 - "App Guide and Safety"
 Cohesion: 0.17
@@ -72,25 +74,31 @@ Nodes (11): AutoClicker Pro desktop app, Top-left pointer emergency failsafe, En
 Cohesion: 0.28
 Nodes (8): hk_row(), listen(), on_change(), on_kp(), start_cap(), _key_str(), _start_recording(), on_kp()
 
+### Community 9 - "permissions.py"
+Cohesion: 0.14
+Nodes (4): accessibility_trusted(), open_accessibility_settings(), FakeLib, PermissionTests
+
+### Community 10 - "Roadmap"
+Cohesion: 0.29
+Nodes (6): Direction, Later, Next, Not planned, Now, Roadmap
+
 ## Knowledge Gaps
 - **5 isolated node(s):** `Top-left pointer emergency failsafe`, `Engine tests use fake input devices`, `Locally saved application settings`, `CustomTkinter UI dependency`, `Pillow image library dependency`
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 44 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 58 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `hk_row()` connect `Input Event Listeners` to `Application Interface`?**
-  _High betweenness centrality (0.043) - this node is a cross-community bridge._
-- **Are the 3 inferred relationships involving `click_loop()` (e.g. with `_refresh_status()` and `_update_counter()`) actually correct?**
-  _`click_loop()` has 3 INFERRED edges - model-reasoned connections that need verification._
+- **Why does `accessibility_trusted()` connect `permissions.py` to `Application Interface`?**
+  _High betweenness centrality (0.064) - this node is a cross-community bridge._
 - **What connects `Top-left pointer emergency failsafe`, `Engine tests use fake input devices`, `Locally saved application settings` to the rest of the system?**
   _5 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Application Interface` be split into smaller, more focused modules?**
   _Cohesion score 0.1282051282051282 - nodes in this community are weakly interconnected._
-- **Why does `_start_recording()` connect `Input Event Listeners` to `Application Interface`?**
-  _High betweenness centrality (0.025) - this node is a cross-community bridge._
-- **Are the 3 inferred relationships involving `macro_replay()` (e.g. with `_refresh_status()` and `_update_counter()`) actually correct?**
-  _`macro_replay()` has 3 INFERRED edges - model-reasoned connections that need verification._
+- **Why does `hk_row()` connect `Input Event Listeners` to `Application Interface`?**
+  _High betweenness centrality (0.035) - this node is a cross-community bridge._
 - **Should `steps` be split into smaller, more focused modules?**
-  _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.125 - nodes in this community are weakly interconnected._
+- **Should `permissions.py` be split into smaller, more focused modules?**
+  _Cohesion score 0.1368421052631579 - nodes in this community are weakly interconnected._
